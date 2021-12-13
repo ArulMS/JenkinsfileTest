@@ -1,12 +1,12 @@
 #!groovy
 pipeline {
-    agent {label 'DEV-TST4-RH'}
+    agent none
 
     stages {
         stage('First') {
             steps {
                 
-                sh '/root/insertsql.pl pqa3 13 192.10.9.8 1 inserting'
+                sh 'Hello World'
             }
         }
         stage('Second') {
